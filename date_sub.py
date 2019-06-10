@@ -18,7 +18,7 @@ def check_bounds(testval,  valrange):
     else:
         return(False)
 
-		
+
 def get_max_month_day( month, year):
     '''
     Given a month and year combo return the max date possible for validation
@@ -32,7 +32,7 @@ def get_max_month_day( month, year):
         return(30)
     else: 
         return(31)
- 
+
 def process_dates (date_string, pattern = '(\d{2})/(\d{2})/(\d{4})', US = False):
     '''
     Args:
@@ -125,9 +125,9 @@ def date_sub_handler(date1, date2):
     message = str(date_diff) +' days'
     return(message)
 
-	
+
 if __name__ == "__main__":
-	#print('processing ', sys.argv[1],sys.argv[2])
-	message = date_sub_handler(sys.argv[2],sys.argv[1])
-	print(message)
+    #print('processing ', sys.argv[1],sys.argv[2])
+    message = date_sub_handler(sys.argv[2],sys.argv[1])
+    print(message)
 
